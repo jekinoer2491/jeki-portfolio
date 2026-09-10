@@ -1,45 +1,57 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#080808" />
-    <title>JEKI. — Creative Developer</title>
-  </head>
-  <body>
-    <div id="loader">
-      <div class="loader-brand">JEKI<span>.</span></div>
-      <div class="loader-bottom"><span>INITIALIZING</span><span id="progress">000%</span></div>
-      <div class="loader-line"><i></i></div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080808" />
+  <meta name="description" content="JEKI. — Creative Developer building digital experiences across web, AI, 3D and interaction." />
+  <title>JEKI. — Creative Developer</title>
+</head>
+<body>
+  <div class="loader" id="loader"><div class="loader-inner"><div class="loader-brand">JEKI.</div><div class="loader-meta"><span>INITIALIZING</span><span id="load-num">00</span></div><div class="load-line"><i id="load-bar"></i></div></div></div>
+  <div class="cursor" id="cursor"><span></span></div>
+  <div class="noise"></div>
+  <header class="nav"><a class="logo magnetic" href="#top" data-cursor="OPEN">JEKI.</a><nav><a href="#work" data-cursor="VIEW">WORK</a><a href="#about" data-cursor="OPEN">ABOUT</a><a href="#contact" data-cursor="OPEN">CONTACT</a></nav><button class="menu magnetic" data-cursor="OPEN">MENU <b>+</b></button></header>
 
-    <canvas id="webgl"></canvas>
+  <main id="top">
+    <section class="hero" id="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">CREATIVE DEVELOPER</p>
+        <h1>I BUILD DIGITAL<br><span>EXPERIENCES.</span></h1>
+        <p class="hero-tags">WEB / AI / 3D / INTERACTION</p>
+        <a class="btn magnetic" href="#work" data-cursor="OPEN"><span>EXPLORE WORK</span><i>↗</i></a>
+      </div>
+      <div class="portrait-wrap" id="portrait-wrap"><div class="portrait-glow"></div><img src="/jeki-profile.jpg" alt="JEKI — Creative Developer" class="portrait" /></div>
+      <div id="scene3d" aria-hidden="true"></div>
+      <div class="hero-index">01 / 05</div><div class="scroll-hint">SCROLL <span>↓</span></div>
+    </section>
 
-    <header class="nav">
-      <a class="brand" href="/">JEKI<span>.</span></a>
-      <nav><a href="#work">WORK</a><a href="#about">ABOUT</a><button id="menu">MENU <span>+</span></button></nav>
-    </header>
+    <section class="about section" id="about"><div class="section-head"><span>01 / ABOUT</span><span>JEKI.</span></div><div class="about-grid"><div><h2>WHO IS<br><em>JEKI?</em></h2></div><div class="about-copy"><p class="reveal-text">JEKI is a creative developer exploring the intersection of web experiences, AI-assisted development, interaction, motion and visual design.</p><p class="muted">I turn ideas into usable digital experiences — from concept and interface to testing, refinement and deployment.</p><div class="stats"><div><strong>04</strong><small>SELECTED PROJECTS</small></div><div><strong>WEB</strong><small>EXPERIENCE</small></div><div><strong>AI</strong><small>ASSISTED</small></div><div><strong>3D</strong><small>EXPLORATION</small></div></div></div></div></section>
 
-    <main>
-      <section class="hero">
-        <div class="hero-label">CREATIVE DEVELOPER</div>
-        <div class="hero-title"><span>I BUILD</span><span>DIGITAL</span><span>EXPERIENCES.</span></div>
-        <div class="hero-photo"><img src="/jeki-profile.jpg" alt="JEKI — Creative Developer" /></div>
-<p class="hero-description">WEB / AI / 3D / INTERACTION</p>
-        <a class="cta magnetic" href="#work">EXPLORE WORK <span>↗</span></a>
-        <div class="scroll-note">SCROLL TO EXPLORE <span>↓</span></div>
-      </section>
+    <section class="work section" id="work"><div class="section-head"><span>02 / SELECTED WORK</span><span>2026</span></div><div class="work-list">
+      <a class="project" href="https://kopicalfpkalongan.netlify.app/" target="_blank" rel="noreferrer" data-title="KOPI CALF" data-cursor="VIEW"><span class="num">01</span><div class="project-main"><h3>KOPI CALF</h3><p>BUSINESS / WEB EXPERIENCE</p></div><span class="year">2026</span><span class="arrow">↗</span></a>
+      <a class="project" href="https://zizi-boutique.netlify.app/" target="_blank" rel="noreferrer" data-title="ZIZI BOUTIQUE" data-cursor="VIEW"><span class="num">02</span><div class="project-main"><h3>ZIZI BOUTIQUE</h3><p>E-COMMERCE / UI</p></div><span class="year">2026</span><span class="arrow">↗</span></a>
+      <a class="project" href="https://undangandigitaldiandanbudi.netlify.app/" target="_blank" rel="noreferrer" data-title="MILADIA & BUDI" data-cursor="VIEW"><span class="num">03</span><div class="project-main"><h3>MILADIA &amp; BUDI</h3><p>DIGITAL INVITATION / INTERACTION</p></div><span class="year">2026</span><span class="arrow">↗</span></a>
+      <a class="project" href="https://undangandigitalnandadanzain.netlify.app/" target="_blank" rel="noreferrer" data-title="NANDA & ZAIN" data-cursor="VIEW"><span class="num">04</span><div class="project-main"><h3>NANDA &amp; ZAIN</h3><p>DIGITAL INVITATION / WEB</p></div><span class="year">2026</span><span class="arrow">↗</span></a>
+    </div><div class="preview" id="preview"><span>VIEW</span><b id="preview-title"></b></div></section>
 
-      <section id="about" class="dummy-section">
-        <small>01 / ABOUT</small><h2>WHO IS<br />JEKI?</h2>
-      </section>
+    <section class="capabilities section"><div class="section-head"><span>03 / CAPABILITIES</span><span>BUILD / TEST / REFINE</span></div><div class="cap-grid"><h2>WHAT<br><em>I BUILD</em></h2><div class="cap-list">
+      <div class="cap"><div><span>AI-ASSISTED DEVELOPMENT</span><b>WORKING</b></div><i><u style="--w:78%"></u></i></div>
+      <div class="cap"><div><span>WEB EXPERIENCE</span><b>WORKING</b></div><i><u style="--w:72%"></u></i></div>
+      <div class="cap"><div><span>UI / UX DESIGN</span><b>DEVELOPING</b></div><i><u style="--w:60%"></u></i></div>
+      <div class="cap"><div><span>INTERACTION &amp; MOTION</span><b>DEVELOPING</b></div><i><u style="--w:52%"></u></i></div>
+      <div class="cap"><div><span>TESTING &amp; REFINEMENT</span><b>WORKING</b></div><i><u style="--w:70%"></u></i></div>
+      <div class="cap"><div><span>DEPLOYMENT</span><b>WORKING</b></div><i><u style="--w:68%"></u></i></div>
+    </div></div></section>
 
-      <section id="work" class="dummy-section">
-        <small>02 / SELECTED WORK</small><h2>SELECTED<br />WORK.</h2>
-      </section>
-    </main>
+    <section class="philosophy section"><div class="philo-bg">JEKI LAB</div><div class="section-head"><span>PHILOSOPHY</span><span>04 / 05</span></div><div class="philo-center"><p>SMALL STEPS,</p><h2>BIG IMPACT.</h2><div class="steps"><span>BUILD.</span><span>TEST.</span><span>REFINE.</span><span>SHIP.</span></div></div></section>
 
-    <div class="cursor"><span>●</span></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    <section class="lab section"><div class="section-head"><span>04 / JEKI LAB</span><span>EXPERIMENTAL</span></div><div class="lab-head"><h2>EXPERIMENT.<br><em>EXPLORE. CREATE.</em></h2><p>A space for small visual, AI, 3D and interaction experiments that do not need to be perfect to be useful.</p></div><div class="lab-grid"><div class="lab-card tall"><span>01</span><strong>AI × VISUAL</strong><i></i></div><div class="lab-card"><span>02</span><strong>UI MOTION</strong><i></i></div><div class="lab-card wide"><span>03</span><strong>3D OBJECT</strong><i></i></div><div class="lab-card"><span>04</span><strong>WEB EXPERIMENT</strong><i></i></div></div></section>
+
+    <section class="contact section" id="contact"><div class="section-head"><span>05 / CONTACT</span><span>LET'S TALK</span></div><div class="contact-inner"><p>HAVE AN IDEA?</p><h2>LET'S BUILD<br><em>SOMETHING.</em></h2><a class="contact-btn magnetic" href="mailto:hello@jeki.dev" data-cursor="OPEN">GET IN TOUCH <span>↗</span></a></div></section>
+  </main>
+  <footer><div class="footer-brand">JEKI.</div><div><p>CREATIVE DEVELOPER</p><small>WEB / AI / 3D / INTERACTION</small></div><div><a href="#work">WORK</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a></div><small>© 2026 JEKI.</small></footer>
+  <script type="module" src="/main.js"></script>
+</body>
 </html>

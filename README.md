@@ -1,18 +1,23 @@
-# JEKI. Hero Prototype
+# JEKI. — Creative Developer Portfolio
 
-## Jalankan
+Dark editorial portfolio built with Vite, vanilla JavaScript, Three.js and GSAP.
+
+## Local development
 
 ```bash
 npm install
 npm run dev
 ```
 
-Buka alamat localhost yang diberikan Vite.
-
-## Build production
+## Production build
 
 ```bash
 npm run build
 ```
 
-Ring 3D dibuat langsung dengan Three.js. Gerakannya mengikuti mouse secara halus dan memiliki rotasi idle.
+## Netlify
+
+Build command: `npm run build`  
+Publish directory: `dist`
+
+The project is intentionally simple and suitable for AI-assisted development.
